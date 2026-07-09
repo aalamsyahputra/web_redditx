@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium — RedditX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header glass" id="header"></header>
+        
+        <div class="layout">
+            <aside class="sidebar sidebar-left" id="sidebar-left"></aside>
+            
+            <main class="main-content premium-page" id="main-content">
+                <div class="premium-hero">
+                    <div class="premium-crown"><i class="fas fa-crown"></i></div>
+                    <h1>RedditX <span class="text-primary">Premium</span></h1>
+                    <p class="premium-tagline">Pengalaman tanpa batas, fitur tanpa kompromi.</p>
+                </div>
+                
+                <!-- Fitur Premium -->
+                <section class="premium-features">
+                    <h2>Apa yang kamu dapatkan?</h2>
+                    <div class="features-grid" id="features-grid"></div>
+                </section>
+                
+                <!-- Paket -->
+                <section class="premium-plans">
+                    <h2>Pilih Paketmu</h2>
+                    <div class="plans-grid" id="plans-grid"></div>
+                </section>
+                
+                <!-- FAQ -->
+                <section class="premium-faq">
+                    <h2>Pertanyaan Umum</h2>
+                    <div class="faq-list" id="faq-list"></div>
+                </section>
+            </main>
+            
+            <aside class="sidebar sidebar-right" id="sidebar-right"></aside>
+        </div>
+    </div>
+    
+    <div id="modal-root"></div>
+    <div id="toast-root" class="toast-container"></div>
+    
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/premium.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

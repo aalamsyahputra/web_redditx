@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RedditX - Platform komunitas modern">
+    <title>RedditX — Komunitas Modern</title>
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Shell utama akan dirender oleh app.js -->
+    <div id="app">
+        <!-- Header -->
+        <header class="header glass" id="header"></header>
+        
+        <!-- Layout 3 kolom -->
+        <div class="layout">
+            <!-- Sidebar Kiri -->
+            <aside class="sidebar sidebar-left" id="sidebar-left"></aside>
+            
+            <!-- Konten Utama -->
+            <main class="main-content" id="main-content">
+                <!-- Hero Section (Landing) -->
+                <section class="hero" id="hero">
+                    <div class="hero-content">
+                        <h1 class="hero-title fade-in">Selamat Datang di <span class="text-primary">RedditX</span></h1>
+                        <p class="hero-subtitle fade-in-delay">Platform komunitas modern untuk berbagi ide, video, dan momen terbaikmu.</p>
+                        <div class="hero-actions fade-in-delay-2">
+                            <a href="signup.html" class="btn btn-primary btn-lg ripple">Mulai Sekarang</a>
+                            <a href="login.html" class="btn btn-outline btn-lg ripple">Masuk</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Tabs Feed -->
+                <div class="feed-tabs" id="feed-tabs">
+                    <button class="tab-btn active ripple" data-sort="hot"><i class="fas fa-fire"></i> Hot</button>
+                    <button class="tab-btn ripple" data-sort="trending"><i class="fas fa-chart-line"></i> Trending</button>
+                    <button class="tab-btn ripple" data-sort="popular"><i class="fas fa-star"></i> Popular</button>
+                    <button class="tab-btn ripple" data-sort="new"><i class="fas fa-clock"></i> New</button>
+                </div>
+                
+                <!-- Composer (Buat Posting) -->
+                <div class="composer card" id="composer"></div>
+                
+                <!-- Feed Posts -->
+                <div class="feed" id="feed">
+                    <div class="skeleton-loader" id="feed-skeleton"></div>
+                </div>
+            </main>
+            
+            <!-- Sidebar Kanan -->
+            <aside class="sidebar sidebar-right" id="sidebar-right"></aside>
+        </div>
+    </div>
+    
+    <!-- Floating Action Button (Mobile) -->
+    <button class="fab ripple" id="fab-upload" aria-label="Buat Posting">
+        <i class="fas fa-plus"></i>
+    </button>
+    
+    <!-- Modal Container -->
+    <div id="modal-root"></div>
+    
+    <!-- Toast Container -->
+    <div id="toast-root" class="toast-container"></div>
+    
+    <!-- JS Modules -->
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/feed.js"></script>
+    <script src="js/vote.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/notification.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/premium.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

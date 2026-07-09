@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan — RedditX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header glass" id="header"></header>
+        
+        <div class="layout">
+            <aside class="sidebar sidebar-left" id="sidebar-left"></aside>
+            
+            <main class="main-content" id="main-content">
+                <div class="page-header">
+                    <h1><i class="fas fa-cog text-primary"></i> Pengaturan</h1>
+                </div>
+                
+                <div class="settings-grid">
+                    <nav class="settings-nav">
+                        <button class="settings-nav-item active" data-section="account"><i class="fas fa-user"></i> Akun</button>
+                        <button class="settings-nav-item" data-section="privacy"><i class="fas fa-shield-alt"></i> Privasi</button>
+                        <button class="settings-nav-item" data-section="notifications"><i class="fas fa-bell"></i> Notifikasi</button>
+                        <button class="settings-nav-item" data-section="appearance"><i class="fas fa-palette"></i> Tampilan</button>
+                        <button class="settings-nav-item" data-section="blocked"><i class="fas fa-ban"></i> Diblokir</button>
+                        <button class="settings-nav-item" data-section="help"><i class="fas fa-question-circle"></i> Bantuan</button>
+                    </nav>
+                    
+                    <div class="settings-content" id="settings-content"></div>
+                </div>
+            </main>
+            
+            <aside class="sidebar sidebar-right" id="sidebar-right"></aside>
+        </div>
+    </div>
+    
+    <div id="modal-root"></div>
+    <div id="toast-root" class="toast-container"></div>
+    
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
